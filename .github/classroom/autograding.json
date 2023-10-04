@@ -1,0 +1,112 @@
+{
+  "tests": [
+    {
+      "name": "pytest",
+      "setup": "",
+      "run": "/opt/conda/bin/pytest -vs test_notebook.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ],
+  [
+    {
+      "name": "pytest",
+      "setup": "",
+      "run": "/opt/conda/bin/pytest -vs test_task_1.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    }
+  ],
+  [
+    {
+      "name": "pytest",
+      "setup": "",
+      "run": "/opt/conda/bin/pytest -vs test_task_2.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    }
+  ],
+  [
+    {
+      "name": "pytest",
+      "setup": "",
+      "run": "/opt/conda/bin/pytest -vs test_task_3.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    }
+  ],
+  [
+    {
+      "name": "pytest",
+      "setup": "",
+      "run": "/opt/conda/bin/pytest -vs test_task_4.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    }
+  ],
+  [
+    {
+      "name": "pytest",
+      "setup": "",
+      "run": "/opt/conda/bin/pytest -vs test_task_5.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    }
+  ],
+  [
+    {
+      "name": "pytest",
+      "setup": "",
+      "run": "/opt/conda/bin/pytest -vs test_task_6.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    }
+  ],
+  [
+    {
+      "name": "pytest",
+      "setup": "",
+      "run": "/opt/conda/bin/pytest -vs test_task_7.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    }
+  ],
+  [
+    {
+      "name": "pytest",
+      "setup": "",
+      "run": "/opt/conda/bin/pytest -vs test_task_8.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 30
+    }
+  ],
+
+
+}
