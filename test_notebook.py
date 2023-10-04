@@ -13,7 +13,7 @@ def test_notebook():
     Проверяем, что ноутбук запускается, отрабатывает без ошибок
     """
 
-    with open('./Python_2_HW_1.ipynb') as f:
+    with open('./Python_2_HW_2.ipynb') as f:
         nb = nbformat.read(f, as_version=4)
 
     ep = ExecutePreprocessor(timeout=1800, kernel_name='python3', allow_errors=False)
