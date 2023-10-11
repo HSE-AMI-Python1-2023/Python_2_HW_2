@@ -23,10 +23,10 @@ def test_task_1():
 
     res = task_1(translation, items, products)
   
-    assert res[res.category == 'portable kitchen and food preparers'].price.values[0] == 186.996
+    assert np.allclose(res[res.category == 'portable kitchen and food preparers'].price.values[0], 186.996)
     assert len(res) == 73
     assert len(res.drop_duplicates()) == 73
     assert res[res.category == 'drinks'].products.values[0] == 81
     assert res.products.sum() == 32341
-    assert res.price.sum() == 12459.751444351941
-    assert res[res.category == 'home_confort'].price.values[0] == 185.56926417326417
+    assert np.allclose(res.price.sum(), 12459.751444351941)
+    assert np.allclose(res[res.category == 'home_confort'].price.values[0], 185.56926417326417)
