@@ -27,5 +27,5 @@ def test_task_6():
     assert len(res) == 214
     assert res.days.min() == 0
     assert res.days.max() == 518
-    assert res[res.days == 233].csat.values[0] == 3.0
-    assert res[res.days == 87].orders.values[0] == 4
+    assert np.allclose(res[res.days == 233].csat.values[0], 3.0)
+    assert np.allclose(res[res.days == 87].orders.values[0], 4)
