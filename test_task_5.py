@@ -24,7 +24,7 @@ def test_task_5():
     res = task_5(reviews)
     assert res.date.min() == '2017-04-01'
     assert res.date.max() == '2018-04-30'
-    assert res.csat.sum() == 1551.8881071384853
-    assert res[res.date == '2017-07-11'].csat.values[0] == 4.291390728476821
-    assert res[res.date == '2018-02-09'].csat.values[0] == 3.992156862745098
+    assert np.allclose(res.csat.sum(), 1551.8881071384853)
+    assert np.allclose(res[res.date == '2017-07-11'].csat.values[0], 4.291390728476821)
+    assert np.allclose(res[res.date == '2018-02-09'].csat.values[0], 3.992156862745098)
     assert res[res.csat == 3.6814814814814816].date.values[0] == '2018-02-25'
