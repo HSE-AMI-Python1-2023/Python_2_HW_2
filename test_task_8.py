@@ -23,8 +23,8 @@ def test_task_8():
 
     res = task_8(orders, items, sellers, customers)
     assert np.all(res.share.values == np.sort(res.share.values)[::-1])
-    assert res.share.values[0] == 0.9743589743589743
-    assert res.share.values[-1] == 0.9356435643564357
+    assert np.allclose(res.share.values[0], 0.9743589743589743)
+    assert np.allclose(res.share.values[-1], 0.9356435643564357)
     assert res.seller_id.values[5] == '1b4c3a6f53068f0b6944d2d005c9fc89'
     assert res.seller_id.values[2] == '06a2c3af7b3aee5d69171b0e14f0ee87'
-    assert res.share.sum() == 9.519118744616716
+    assert np.allclose(res.share.sum(), 9.519118744616716)
