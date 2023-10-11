@@ -22,8 +22,8 @@ def test_task_3():
     sellers = pd.read_csv('olist_sellers_dataset.csv')
 
     res = task_3(orders, customers, items)
-    assert res.perc.sum() == 1
-    assert res[res.state == "RS"].perc.values[0] == 0.055868056429816286
-    assert res.sort_values("perc", ascending=True).iloc[0, 1] == 0.0005862290943146945
-    assert res.sort_values("perc", ascending=False).iloc[0, 1] == 0.3741756035817322
+    assert np.allclose(res.perc.sum(), 1)
+    assert np.allclose(res[res.state == "RS"].perc.values[0], 0.055868056429816286)
+    assert np.allclose(res.sort_values("perc", ascending=True).iloc[0, 1], 0.0005862290943146945)
+    assert np.allclose(res.sort_values("perc", ascending=False).iloc[0, 1], 0.3741756035817322)
     assert len(res) == 27
